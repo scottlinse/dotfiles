@@ -1,0 +1,89 @@
+* {
+  border: none;
+  border-radius: 0;
+  font-family: JetBrainsMono Nerd Font Mono;
+  font-size: 13px;
+  font-weight: 700;
+  min-height: 0;
+}
+
+/* ---- Color variables (GTK syntax) ---- */
+@define-color bg rgba(34, 34, 34, 0.94);
+@define-color fg #ffffff;
+/* @define-color accent #285577; */
+@define-color accent rgba(51, 204, 255, 0.7);
+@define-color underline #ffffff;
+
+@define-color warning orange;
+@define-color critical red;
+@define-color inhibitor green;
+
+/* ---- Window ---- */
+window#waybar {
+  background: @bg;
+  color: @fg;
+}
+
+/* ---- Workspaces (Hyprland) ---- */
+#workspaces button {
+  padding: 0 8px;
+  background: transparent;
+  color: @fg;
+  border-bottom: 2px solid transparent;
+}
+
+#workspaces button.active {
+  background: @accent;
+  border-bottom: 2px solid @underline;
+}
+
+/* Optional: hover and urgent states */
+#workspaces button:hover {
+  background: alpha(@accent, 0.4);
+}
+
+#workspaces button.urgent {
+  color: @warning;
+  border-bottom: 2px solid @warning;
+}
+
+/* ---- Modules ---- */
+#bluetooth,
+#clock,
+#custom-weather,
+#battery,
+#cpu,
+#memory,
+#backlight,
+#network,
+#pulseaudio,
+#temperature,
+#tray,
+#idle_inhibitor {
+  color: @fg;
+  margin: 0;
+  padding: 0 6px;
+}
+
+#custom-launcher {
+  color: @fg;
+  margin: 0;
+  padding: 0 12px;
+}
+
+#custom-launcher:hover {
+  background: alpha(@accent, 0.4);
+}
+
+/* States */
+#battery.warning {
+  color: @warning;
+}
+
+#battery.critical {
+  color: @critical;
+}
+
+#idle_inhibitor.activated {
+  color: @inhibitor;
+}

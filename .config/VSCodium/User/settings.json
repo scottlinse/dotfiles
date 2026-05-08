@@ -1,0 +1,18 @@
+{
+  "editor.fontFamily": "AdwaitaMono Nerd Font Mono",
+  "editor.fontLigatures": true,
+  "editor.fontSize": 13,
+  "git.enableSmartCommit": true,
+  "terminal.integrated.fontFamily": "monospace",
+  "qt-core.additionalQtPaths": [
+    {
+      "name": "Qt-5.15.18-linux-g++_from_PATH",
+      "path": "/usr/bin/qmake"
+    }
+  ],
+  "workbench.colorTheme": "NoctaliaTheme",
+  "flutterColor.hexFormat": "lower case",
+  "color-manager.insertClassicHex": true,
+  "color-pick.analytics": true,
+  "color-highlight.markerType": "dot-before"
+}

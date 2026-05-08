@@ -1,0 +1,26 @@
+#!/bin/bash
+# Dotfiles root-only install step
+
+SERVICE_PATH="/etc/systemd/system/pci-wakeup-disable.service"
+
+echo "Creating pci-wakeup-disable service..."
+sudo tee "$SERVICE_PATH" > /dev/null << 'EOF'
+[Unit]
+Description=Disable PCIe device wakeups
+After=multi-user.target
+
+[Service]
+Type=oneshot
+ExecStart=/bin/sh -c 'for f in /sys/bus/pci/devices/*/power/wakeup; do echo disabled > "$f"; done'
+
+[Install]
+WantedBy=multi-user.target
+EOF
+
+echo "Reloading systemd..."
+sudo systemctl daemon-reload
+
+echo "Enabling and starting service..."
+sudo systemctl enable --now pci-wakeup-disable.service
+
+echo "Done! Future usage does not require root."

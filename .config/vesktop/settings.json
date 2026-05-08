@@ -1,0 +1,20 @@
+{
+    "appBadge": false,
+    "arRPC": false,
+    "checkUpdates": false,
+    "customTitleBar": false,
+    "disableMinSize": true,
+    "discordBranch": "stable",
+    "hardwareAcceleration": true,
+    "minimizeToTray": false,
+    "splashTheming": true,
+    "staticTitle": false,
+    "tray": true,
+    "splashColor": "rgb(243, 243, 244)",
+    "spellCheckLanguages": [
+        "en-US",
+        "en"
+    ],
+    "splashBackground": "rgb(44, 45, 50)",
+    "hardwareVideoAcceleration": true
+}

@@ -1,0 +1,60 @@
+* {
+  border: none;
+  border-radius: 0;
+  font-family: Adwaita Sans;
+  font-size: 13px;
+  font-weight: 400;
+  min-height: 0;
+}
+
+window#waybar {
+  background: rgba(34, 34, 34, 0.94);
+  color: #ffffff;
+}
+
+#workspaces button {
+  padding: 0 5px;
+  background: transparent;
+  color: #ffffff;
+  border-bottom: 3px solid transparent;
+}
+
+#workspaces button.focused {
+  background: #285577;
+  border-bottom: 3px solid #ffffff;
+}
+
+#mode {
+  background: #285577;
+  border-bottom: 3px solid #ffffff;
+}
+
+#bluetooth,
+#clock,
+#custom-launcher,
+#custom-weather,
+#battery,
+#cpu,
+#memory,
+#backlight,
+#network,
+#pulseaudio,
+#temperature,
+#tray,
+#idle_inhibitor {
+  color: #ffffff;
+  margin: 0 6px;     /* equal spacing left/right */
+  padding: 0;
+}
+
+#battery.warning {
+  color: orange;
+}
+
+#battery.critical {
+  color: red;
+}
+
+#idle_inhibitor.activated {
+  color: green;
+}

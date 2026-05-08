@@ -1,0 +1,52 @@
+{
+
+    "hyprland/window": {
+      "max-length": 50
+    },
+
+    "custom/weather": {
+      "exec": "wttrbar --location Portland --nerd --fahrenheit",
+      "format": "{}°F ",
+      "interval": 600,
+      "return-type": "json",
+      "tooltip": true
+    },
+    "pulseaudio": {
+      "format": "{icon}  {volume}%",
+      "format-icons": {
+        "default": [
+          "",
+          ""
+        ]
+      },
+      "format-muted": "",
+      "on-click": "ghostty --confirm-close-surface=false -e wiremix"
+    },
+    "bluetooth": {
+      "format": ":{status}",
+      "format-connected": "",
+      "format-disabled": "󰂲",
+      "on-click": "ghostty --confirm-close-surface=false -e bluetui",
+      "tooltip-format": "{controller_alias}\t{controller_address}\n\n{num_connections} connected",
+      "tooltip-format-connected": "{controller_alias}\t{controller_address}\n\n{num_connections} connected\n\n{device_enumerate}",
+      "tooltip-format-enumerate-connected": "{device_alias}\t{device_address}",
+      "tooltip-format-enumerate-connected-battery": "{device_alias}\t{device_address}\t{device_battery_percentage}%"
+    },
+    "custom/network": {
+      "exec": "~/.config/waybar/scripts/network.sh",
+      "interval": 5,
+      "format": "{}",
+      "return-type": "json",
+      "on-click": "ghostty --confirm-close-surface=false -e nmtui"
+    },
+    "clock": {
+      "format": "{:%a %m/%d %I:%M %p}",
+      "interval": 1,
+      "on-click": "thunderbird --calendar",
+      "tooltip-format": "{:%a - %Y/%m/%d - %I:%M:%S %p}"
+    },
+    "tray": {
+      "spacing": 10
+    }
+
+}

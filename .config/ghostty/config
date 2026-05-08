@@ -1,0 +1,7 @@
+background-opacity = 0.9
+font-family = Adwaita Mono Nerd
+font-size = 11
+keybind = ctrl+h=goto_split:left
+keybind = ctrl+l=goto_split:right
+theme = noctalia
+confirm-close-surface = false
