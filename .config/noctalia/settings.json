@@ -204,6 +204,9 @@
                             "icon": "noctalia",
                             "id": "ControlCenter",
                             "useDistroLogo": true
+                        },
+                        {
+                            "id": "plugin:niri-auto-tile"
                         }
                     ]
                 }
@@ -324,6 +327,9 @@
                             "icon": "hyprland",
                             "id": "ControlCenter",
                             "useDistroLogo": true
+                        },
+                        {
+                            "id": "plugin:niri-auto-tile"
                         }
                     ]
                 }
@@ -358,10 +364,10 @@
                     "followFocusedScreen": false,
                     "fontWeight": "bold",
                     "groupedBorderOpacity": 1,
-                    "hideUnoccupied": false,
+                    "hideUnoccupied": true,
                     "iconScale": 0.8,
                     "id": "Workspace",
-                    "labelMode": "index",
+                    "labelMode": "name",
                     "occupiedColor": "secondary",
                     "pillSize": 0.62,
                     "showApplications": false,
@@ -369,6 +375,19 @@
                     "showBadge": true,
                     "showLabelsOnlyWhenOccupied": false,
                     "unfocusedIconsOpacity": 1
+                },
+                {
+                    "defaultSettings": {
+                        "debounceMs": 300,
+                        "enabled": true,
+                        "language": "auto",
+                        "maxEventsPerSecond": 20,
+                        "maxVisible": 4,
+                        "perWorkspace": false,
+                        "workspaceMaxVisible": {
+                        }
+                    },
+                    "id": "plugin:niri-auto-tile"
                 }
             ],
             "right": [
@@ -493,14 +512,14 @@
     },
     "colorSchemes": {
         "darkMode": true,
-        "generationMethod": "tonal-spot",
+        "generationMethod": "faithful",
         "manualSunrise": "06:30",
         "manualSunset": "18:30",
         "monitorForColors": "",
-        "predefinedScheme": "Ayu",
+        "predefinedScheme": "GitHub Dark",
         "schedulingMode": "off",
         "syncGsettings": true,
-        "useWallpaperColors": false
+        "useWallpaperColors": true
     },
     "controlCenter": {
         "cards": [

@@ -6,3 +6,5 @@ end
 set -gx PATH $PATH /home/scott/.lmstudio/bin
 # End of LM Studio CLI section
 
+# Initialize zoxide in place of cd
+zoxide init --cmd cd fish | source
