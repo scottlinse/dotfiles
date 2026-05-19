@@ -8,7 +8,7 @@
     ],
     "states": {
         "niri-auto-tile": {
-            "enabled": true,
+            "enabled": false,
             "sourceUrl": "https://github.com/noctalia-dev/noctalia-plugins"
         },
         "polkit-agent": {

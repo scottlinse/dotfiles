@@ -30,7 +30,7 @@
         "showCategories": true,
         "showIconBackground": false,
         "sortByMostUsed": true,
-        "terminalCommand": "alacritty -e",
+        "terminalCommand": "ghostty -e",
         "viewMode": "list"
     },
     "audio": {
@@ -204,9 +204,6 @@
                             "icon": "noctalia",
                             "id": "ControlCenter",
                             "useDistroLogo": true
-                        },
-                        {
-                            "id": "plugin:niri-auto-tile"
                         }
                     ]
                 }
@@ -327,9 +324,6 @@
                             "icon": "hyprland",
                             "id": "ControlCenter",
                             "useDistroLogo": true
-                        },
-                        {
-                            "id": "plugin:niri-auto-tile"
                         }
                     ]
                 }
@@ -375,19 +369,6 @@
                     "showBadge": true,
                     "showLabelsOnlyWhenOccupied": false,
                     "unfocusedIconsOpacity": 1
-                },
-                {
-                    "defaultSettings": {
-                        "debounceMs": 300,
-                        "enabled": true,
-                        "language": "auto",
-                        "maxEventsPerSecond": 20,
-                        "maxVisible": 4,
-                        "perWorkspace": false,
-                        "workspaceMaxVisible": {
-                        }
-                    },
-                    "id": "plugin:niri-auto-tile"
                 }
             ],
             "right": [
@@ -741,12 +722,12 @@
         "wifiDetailsViewMode": "list"
     },
     "nightLight": {
-        "autoSchedule": true,
+        "autoSchedule": false,
         "dayTemp": "6500",
-        "enabled": false,
+        "enabled": true,
         "forced": false,
         "manualSunrise": "06:30",
-        "manualSunset": "18:30",
+        "manualSunset": "22:00",
         "nightTemp": "4000"
     },
     "noctaliaPerformance": {
@@ -926,6 +907,10 @@
             },
             {
                 "enabled": true,
+                "id": "fuzzel"
+            },
+            {
+                "enabled": true,
                 "id": "hyprland"
             }
         ],
@@ -947,7 +932,7 @@
     },
     "wallpaper": {
         "automationEnabled": false,
-        "directory": "/home/scott/Pictures/wallpapers",
+        "directory": "/home/scott/Pictures/wallpapers/32x9",
         "enableMultiMonitorDirectories": true,
         "enabled": true,
         "favorites": [
